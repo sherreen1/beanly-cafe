@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beanly Cafe" />
+    <title>Beanly Cafe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top beanly-nav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <span class="brand-mark">❧</span>
+          <span>Beanly <small>More Than Coffee</small></span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="فتح القائمة"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">القائمة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">آراء العملاء</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+          <a href="#reservation" class="btn btn-beanly">احجز الآن</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-7">
+            <h1>أكثر من مجرد قهوة</h1>
+            <h2>لحظات أفضل كل يوم</h2>
+            <p class="hero-text">
+              في Beanly نؤمن أن القهوة تجمع الطعم الرائع والأجواء المميزة لتصنع
+              لك تجربة لا تُنسى.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#menu" class="btn btn-beanly btn-lg"
+                >استكشف قائمتنا <span>←</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-dot">•••</div>
+    </header>
+
+    <section class="features section-light">
+      <div class="container">
+        <!-- Heading -->
+        <div class="section-heading text-center">
+          <span>لماذا Beanly؟</span>
+
+          <h2>تجربة مختلفة في كل كوب</h2>
+
+          <div class="heading-line">
+            <span></span>
+
+            <svg class="coffee-bean" viewBox="0 0 50 50">
+              <ellipse
+                cx="25"
+                cy="25"
+                rx="13"
+                ry="19"
+                transform="rotate(35 25 25)"
+                fill="#9a6235"
+              />
+
+              <path
+                d="M20 10
+                 C27 17, 29 25, 22 40"
+                fill="none"
+                stroke="#d39a62"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <span></span>
+          </div>
+        </div>
+
+            <div class="row g-4 text-center">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+
+              <h3>خدمة مميزة</h3>
+
+              <p>
+                فريقنا هنا دائمًا
+                <br />
+                لخدمتك وراحتك
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+
+              <h3>طعم استثنائي</h3>
+
+              <p>
+                وصفات محضرة بشغف
+                <br />
+                وبنفس إبداعي
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+              </div>
+
+              <h3>أجواء مريحة</h3>
+
+              <p>
+                مكان مثالي للعمل
+                <br />
+                أو للاسترخاء
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+
+              <h3>مكونات طبيعية</h3>
+
+              <p>
+                نختار أجود أنواع البن
+                <br />
+                من مزارع عالمية
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="menu" class="menu-section section-dark">
+      <div class="container">
+        <div class="section-heading text-center text-white">
+          <h2>قائمتنا المميزة</h2>
+          <p>مجموعة مختارة من مشروباتنا الشهية</p>
+        </div>
+
+        <!-- Menu Tabs -->
+
+        <ul class="nav menu-tabs justify-content-center mb-5" role="tablist">
+          <li class="nav-item">
+            <button
+              class="nav-link active" id="hot-tab" role="tab" aria-controls="hot" aria-selected="true"
+              data-bs-toggle="tab"
+              data-bs-target="#hot"
+            >
+              المشروبات الساخنة
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link" id="cold-tab" role="tab" aria-controls="cold" aria-selected="false"
+              data-bs-toggle="tab"
+              data-bs-target="#cold"
+            >
+              المشروبات الباردة
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link" id="desserts-tab" role="tab" aria-controls="desserts" aria-selected="false"
+              data-bs-toggle="tab"
+              data-bs-target="#desserts"
+            >
+              الحلويات
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+
+        <div class="tab-content">
+          <!-- Hot Drinks -->
+
+          <div class="tab-pane fade show active" id="hot" role="tabpanel" aria-labelledby="hot-tab">
+            <div class="row g-4">
+              <!-- Cappuccino -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img src="img/img_2.png" alt="كابتشينو" />
+
+                  <div class="p-3">
+                    <h3>كابتشينو</h3>
+
+                    <p>قهوة غنية مع رغوة الحليب الناعمة</p>
+
+                    <div class="product-bottom">
+                      <strong>55 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Coffee -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img src="img/img_3.jpg" alt="قهوة ساخنة" />
+
+                  <div class="p-3">
+                    <h3>قهوة</h3>
+
+                    <p>قهوة ساخنة غنية بنكهة أصيلة ومميزة</p>
+
+                    <div class="product-bottom">
+                      <strong>50 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Mocha -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img src="img/img_4.png" alt="موكا ساخنة" />
+
+                  <div class="p-3">
+                    <h3>موكا</h3>
+
+                    <p>مزيج دافئ من القهوة والشوكولاتة الغنية</p>
+
+                    <div class="product-bottom">
+                      <strong>60 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Espresso -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img src="img/espresso.jpg" alt="إسبريسو" />
+
+                  <div class="p-3">
+                    <h3>إسبريسو</h3>
+
+                    <p>قهوة مركزة بنكهة قوية ومميزة</p>
+
+                    <div class="product-bottom">
+                      <strong>45 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cold Drinks -->
+
+          <div class="tab-pane fade" id="cold" role="tabpanel" aria-labelledby="cold-tab">
+            <div class="row g-4">
+              <!-- Ice Latte -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img src="img/img-4.jpg" alt="آيس لاتيه" />
+
+                  <div class="p-3">
+                    <h3>آيس لاتيه</h3>
+
+                    <p>لاتيه بارد ومنعش بطعم القهوة الغني</p>
+
+                    <div class="product-bottom">
+                      <strong>60 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Frappuccino -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=700&q=85"
+                    alt="فرابتشينو"
+                  />
+
+                  <div class="p-3">
+                    <h3>فرابتشينو</h3>
+
+                    <p>مشروب بارد كريمي ومنعش</p>
+
+                    <div class="product-bottom">
+                      <strong>70 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Ice Mocha -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=700&q=85"
+                    alt="آيس موكا"
+                  />
+
+                  <div class="p-3">
+                    <h3>آيس موكا</h3>
+
+                    <p>قهوة باردة ممزوجة بالشوكولاتة الغنية</p>
+
+                    <div class="product-bottom">
+                      <strong>65 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Smoothie -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=700&q=85"
+                    alt="سموثي"
+                  />
+
+                  <div class="p-3">
+                    <h3>سموثي</h3>
+
+                    <p>فواكه طازجة بطعم منعش ولذيذ</p>
+
+                    <div class="product-bottom">
+                      <strong>75 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+
+          <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+            <div class="row g-4">
+              <!-- Chocolate Cake -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img src="img/img_1.png" alt="كيك الشوكولاتة" />
+
+                  <div class="p-3">
+                    <h3>كيك الشوكولاتة</h3>
+
+                    <p>كيك شوكولاتة غني بطبقات كريمية لذيذة</p>
+
+                    <div class="product-bottom">
+                      <strong>65 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Croissant -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=85"
+                    alt="كرواسون"
+                  />
+
+                  <div class="p-3">
+                    <h3>كرواسون</h3>
+
+                    <p>كرواسون طازج وهش يوميًا</p>
+
+                    <div class="product-bottom">
+                      <strong>45 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Cookies -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=700&q=85"
+                    alt="كوكيز"
+                  />
+
+                  <div class="p-3">
+                    <h3>كوكيز</h3>
+
+                    <p>كوكيز طازج محشو بقطع الشوكولاتة</p>
+
+                    <div class="product-bottom">
+                      <strong>35 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Cheesecake -->
+
+              <div class="col-6 col-lg-3">
+                <article class="product-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700&q=85"
+                    alt="تشيز كيك"
+                  />
+
+                  <div class="p-3">
+                    <h3>تشيز كيك</h3>
+
+                    <p>تشيز كيك كريمي وخفيف بطعم مميز</p>
+
+                    <div class="product-bottom">
+                      <strong>65 جنيه</strong>
+                      <span>+</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full Menu Button -->
+
+        <div class="text-center mt-5">
+          <a href="#reservation" class="btn btn-beanly btn-lg">
+            عرض القائمة الكاملة +
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section section-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Images - Left -->
+
+          <div class="col-lg-6 order-lg-2">
+            <div class="about-gallery">
+              <img
+                class="about-img about-img-1"
+                src="img/Cafee.png"
+                alt="داخل المقهى"
+              />
+
+              <img
+                class="about-img about-img-2"
+                src="img/In_Cofee.png"
+                alt="جلسة في المقهى"
+              />
+
+              <img
+                class="about-img about-img-3"
+                src="img/img_cofe.png"
+                alt="تحضير القهوة"
+              />
+            </div>
+          </div>
+
+          <!-- Content - Right -->
+
+          <div class="col-lg-6 order-lg-1 d-flex align-items-center">
+            <div class="about-content">
+              <div class="section-heading text-end">
+                <span>من نحن؟</span>
+
+                <h2>قصة Beanly</h2>
+
+                <div class="heading-line about-line">
+                  <span></span>
+
+                  <svg class="coffee-bean" viewBox="0 0 50 50">
+                    <ellipse
+                      cx="25"
+                      cy="25"
+                      rx="13"
+                      ry="19"
+                      transform="rotate(35 25 25)"
+                      fill="#9a6235"
+                    />
+
+                    <path
+                      d="M20 10 C27 17, 29 25, 22 40"
+                      fill="none"
+                      stroke="#d39a62"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+
+                  <span></span>
+                </div>
+              </div>
+
+              <p class="about-lead">قهوة تجمع الناس</p>
+
+              <p class="about-text">
+                بدأت رحلتنا بشغف حقيقي تجاه القهوة، ومن ذلك الحب ونحن نقدم تجربة
+                فريدة تجمع بين الجودة والطعم والأجواء المريحة. نسعى دائمًا لأن
+                نصنع لك لحظات مميزة مع الأصدقاء أو للاستمتاع بمفردك.
+              </p>
+
+              <a href="#contact" class="btn btn-outline-beanly">
+                تعرف علينا أكثر ←
+              </a>
+
+              <!-- Stats -->
+
+              <div class="stats row g-3">
+                <div class="col-4">
+                  <div class="stat-item">
+                    <strong>+100K</strong>
+                    <span>عميل سعيد</span>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="stat-item">
+                    <strong>+50</strong>
+                    <span>نوع من المشروبات</span>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="stat-item">
+                    <strong>+10</strong>
+                    <span>سنوات من الخبرة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-heading text-center text-white">
+          <h2>آراء عملائنا</h2>
+          <span>ماذا يقولون عن تجربتهم فى Beanly؟</span>
+
+          <div class="heading-line">
+            <span></span>
+            <i>☕</i>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Customer 1 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <span class="quote">❞</span>
+
+              <p>مكان مريح جدًا ومناسب للعمل، والفريق متعاون جدًا.</p>
+
+              <div class="customer">
+                <div class="avatar">
+                  <img src="./img/Ahmed.png" alt="احمد خالد" />
+                </div>
+
+                <div class="customer-info">
+                  <strong>احمد خالد</strong>
+                  <small>★★★★★</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer 2 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <span class="quote">❞</span>
+
+              <p>أفضل قهوة في المدينة! الطعم والجودة لا مثيل لهما.</p>
+
+              <div class="customer">
+                <div class="avatar">
+                  <img src="./img/Mohamed.png" alt="محمد علي" />
+                </div>
+
+                <div class="customer-info">
+                  <strong>محمد علي</strong>
+                  <small>★★★★★</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer 3 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <span class="quote">❞</span>
+
+              <p>الخدمة ممتازة والأجواء رائعة، أكيد هكرر التجربة مرة تانية.</p>
+
+              <div class="customer">
+                <div class="avatar">
+                  <img src="./img/Sara.png" alt="سارة أحمد" />
+                </div>
+
+                <div class="customer-info">
+                  <strong>سارة أحمد</strong>
+                  <small>★★★★★</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-dots">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+      <div class="container text-center position-relative">
+        <p class="eyebrow">احجز زيارتك</p>
+        <h2>نحن في انتظارك</h2>
+        <p>
+          سواء كنت تبحث عن مكان للاسترخاء أو العمل أو لقاء الأصدقاء، Beanly في
+          انتظارك.
+        </p>
+        <a href="#contact" class="btn btn-beanly btn-lg">احجز الآن ←</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-light">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <div class="section-heading">
+              <span>تواصل معنا</span>
+              <h2>نحن هنا لخدمتك</h2>
+            </div>
+            <p>
+              يسعدنا دائمًا استقبال استفساراتك واقتراحاتك. تواصل معنا في أي وقت.
+            </p>
+
+            <div class="contact-list">
+              <div>
+                <span>⌖</span>
+                <p><strong>العنوان</strong><br />القاهرة، مصر</p>
+              </div>
+              <div>
+                <span>☎</span>
+                <p><strong>الهاتف</strong><br />+20 123 456 7890</p>
+              </div>
+              <div>
+                <span>✉</span>
+                <p>
+                  <strong>البريد الإلكتروني</strong><br />hello@beanlycafe.com
+                </p>
+              </div>
+              <div>
+                <span>◷</span>
+                <p>
+                  <strong>ساعات العمل</strong><br />يوميًا من 8 صباحًا حتى 12
+                  مساءً
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form class="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الاسم الكامل"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="البريد الإلكتروني"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="رقم الهاتف"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الموضوع"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    placeholder="رسالتك"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-beanly w-100" type="submit">
+                    إرسال الرسالة
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a class="footer-brand" href="#">❧ Beanly</a>
+            <p>لحظات أفضل مع كل كوب قهوة.</p>
+            <div class="socials">
+              <a href="#">f</a><a href="#">◎</a><a href="#">𝕏</a
+              ><a href="#">♪</a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h4>روابط سريعة</h4>
+            <a href="#home">الرئيسية</a>
+            <a href="#menu">القائمة</a>
+            <a href="#about">من نحن</a>
+            <a href="#contact">تواصل معنا</a>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h4>معلومات التواصل</h4>
+            <p>القاهرة، مصر</p>
+            <p>+20 123 456 7890</p>
+            <p>hello@beanlycafe.com</p>
+          </div>
+
+          <div class="col-lg-3">
+            <h4>اشترك في نشرتنا</h4>
+            <p>احصل على آخر عروضنا وأخبارنا.</p>
+            <form class="newsletter d-flex">
+              <input type="email" placeholder="بريدك الإلكتروني" aria-label="البريد الإلكتروني" />
+              <button type="submit">←</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">جميع الحقوق محفوظة © 2026 Beanly</div>
+      </div>
+    </footer>
+
+    <button
+      class="to-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ⌃
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .querySelector(".contact-form")
+        ?.addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("تم إرسال رسالتك بنجاح، شكرًا لتواصلك معنا!");
+        });
+    </script>
+  </body>
+</html>
