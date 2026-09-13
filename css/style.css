@@ -24,6 +24,12 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
     font-family: "Cairo", sans-serif;
     color: var(--text);
@@ -36,13 +42,30 @@ a {
 }
 
 /* ---------- Navbar ---------- */
+
 .beanly-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 12px 0;
     background: rgba(10, 8, 6, 0.88);
     backdrop-filter: blur(10px);
-    padding: 12px 0;
-    transition: 0.3s;
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1030;
+    transition: 0.3s ease;
 }
 
+/* محتوى الناف */
+.beanly-nav .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Logo */
 .navbar-brand {
     font-family: "Playfair Display", serif;
     font-size: 1.25rem;
@@ -62,6 +85,7 @@ a {
     color: #dfc39f;
 }
 
+/* Links */
 .nav-link {
     color: #fff !important;
     font-size: 0.85rem;
@@ -73,6 +97,68 @@ a {
     color: #dfb987 !important;
 }
 
+/* Mobile */
+@media (max-width: 991.98px) {
+    .beanly-nav {
+        padding: 8px 0;
+        background: rgba(10, 8, 6, 0.96);
+    }
+
+    .beanly-nav .container {
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        padding-bottom: 8px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        gap: 0 !important;
+    }
+
+    .nav-link {
+        padding: 8px 0;
+    }
+
+    .beanly-nav .btn-beanly {
+        display: block;
+        width: fit-content;
+        margin: 8px auto 0;
+    }
+}
+
+/* الشاشات الصغيرة جدًا */
+@media (max-width: 575.98px) {
+    .beanly-nav {
+        width: 100vw;
+        left: 0;
+        right: 0;
+        padding: 7px 0;
+    }
+
+    .beanly-nav .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .brand-mark {
+        font-size: 1.6rem;
+    }
+
+    .navbar-toggler {
+        padding: 4px 7px;
+    }
+}
 /* ---------- Buttons ---------- */
 .btn-beanly {
     background: linear-gradient(135deg, #e1bd91, #b17b4c);
@@ -396,6 +482,7 @@ a {
 }
 
 /* About Content */
+
 .about-content {
     width: 100%;
     max-width: 570px;
@@ -427,8 +514,8 @@ a {
 .about-text {
     text-align: center;
     color: #75685e;
-    font-size: 0.9rem;
-    line-height: 2.1;
+    font-size: 1rem;
+    line-height: 2;
     margin-bottom: 25px;
 }
 
@@ -469,8 +556,9 @@ a {
     color: #8b7b70;
     font-size: 0.7rem;
     white-space: nowrap;
-}
+} 
 /* ---------- Testimonials ---------- */
+
 .testimonials {
     background:
         linear-gradient(
@@ -509,22 +597,47 @@ a {
     font-style: normal;
 }
 
+
+/* ---------- Testimonial Card ---------- */
+
 .testimonial-card {
     position: relative;
-    height: 100%;
-    min-height: 225px;
+    min-height: 280px;
     padding: 35px 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background: #fff;
     color: #352319;
     border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-    text-align: right;
     transition: 0.3s ease;
 }
 
 .testimonial-card:hover {
     transform: translateY(-6px);
 }
+
+
+/* ---------- Comment ---------- */
+
+.testimonial-card > p {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px;
+    color: #5d5148;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.9;
+    text-align: center;
+}
+
+
+/* ---------- Quote ---------- */
 
 .quote {
     position: absolute;
@@ -536,22 +649,13 @@ a {
     line-height: 1;
 }
 
-.testimonial-card > p {
-    min-height: 65px;
-    color: #5d5148;
-    font-size: 0.85rem;
-    font-weight: 600;
-    line-height: 1.9;
-    margin: 0 0 25px;
-    text-align: center;
-}
+
+/* ---------- Customer ---------- */
 
 .customer {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 12px;
-    direction: rtl;
 }
 
 .avatar {
@@ -795,15 +899,8 @@ a {
     font-size: 1.3rem;
 }
 
-/* ---------- Responsive ----------
-   Bootstrap Grid controls columns.
-   These rules only adjust visual sizing/spacing.
-   ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 991.98px) {
-    .beanly-nav {
-        background: rgba(10, 8, 6, 0.96);
-    }
-
     .hero {
         background-attachment: scroll;
     }
@@ -887,6 +984,10 @@ a {
 }
 
 @media (max-width: 575.98px) {
+    .row {
+        max-width: 100%;
+    }
+
     .section-light,
     .section-dark,
     .testimonials,
@@ -980,6 +1081,7 @@ a {
         width: 57%;
         height: 72%;
         right: 42%;
+        left: auto;
     }
 
     .about-img-2 {
@@ -1002,7 +1104,7 @@ a {
     }
 
     .about-text {
-        font-size: 0.78rem;
+        font-size: 0.95rem;
         line-height: 2;
     }
 
@@ -1032,7 +1134,8 @@ a {
     }
 
     .testimonial-card > p {
-        font-size: 0.78rem;
+        font-size: 0.9rem;
+        line-height: 1.9;
     }
 
     .avatar {
